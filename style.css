@@ -53,6 +53,20 @@ body {
     }
     100% {
       transform: translateY(100vh) scale(1) rotate(360deg);
+
+        
+  /* Адаптация для мобильных устройств */
+  @media (max-width: 768px) {
+    .message h1 {
+      font-size: 2rem; /* Уменьшаем шрифт заголовка */
+    }
+    .message p {
+      font-size: 1rem; /* Уменьшаем размер шрифта текста */
+    }
+    audio {
+      bottom: 20px; /* Поднимаем плеер чуть выше */
+    }
+  }
       opacity: 0.8;
     }
   }
